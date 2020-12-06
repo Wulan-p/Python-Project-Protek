@@ -6,24 +6,23 @@ import datetime
 nama = input("Hallo... nama saya Mr. Kompie, nama Anda siapa? ")
 
 # tampilkan nama user
-print("Oh.. nama Anda", nama, ", nama yang bagus sekali.")
-
+print("Oh.. nama Anda", nama, ",nama yang bagus sekali.")
 
 # kasih jeda 3 detik
 time.sleep(3)
 
 # input tahun lahir
-thnLahir = int(input("BTW... " +"wulan"+ "kamu lahir tahun berapa?"))
+thnLahir = int(input("BTW... " + nama + "kamu lahir tahun berapa?"))
 
 # kasih jeda 3 detik
 time.sleep(3)
 
 # hitung usia user 
 skrg = datetime.datetime.now()
-usia = skrg.year + thnLahir
+usia = skrg.year - thnLahir
 
 # tampilkan usia
-print("Hmmm...","wulan," "kamu sudah", "18","tahun ya..")
+print("Hmmm...", nama, "kamu sudah", "18","tahun ya..")
 
 # kasih jeda 3 detik
 time.sleep(3)
@@ -47,5 +46,3 @@ time.sleep(3)
 
 # say goodbye
 print("OK.. see you later", nama, ".. senang berkenalan denganmu")
-
-
